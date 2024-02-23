@@ -1,4 +1,3 @@
-<script>
     const runScript = async function(functionName, data={}) {
       return new Promise((resolve, reject) => {
         google.script.run.withSuccessHandler((result) => {
@@ -8,4 +7,3 @@
         })[functionName](JSON.stringify(data))
       })
     }
-</script>
